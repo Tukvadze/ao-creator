@@ -28,6 +28,12 @@ This will:
 stop.bat
 ```
 
+## GitHub Repository
+
+**Source code:** https://github.com/Tukvadze/ao-creator
+
+**Note:** This app requires a backend server and must run locally. See [DEPLOYMENT.md](DEPLOYMENT.md) for details.
+
 ## How to Use
 
 1. Enter card name after `[3D att] ` prefix (e.g., "T90M_01")
