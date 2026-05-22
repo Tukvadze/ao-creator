@@ -1,0 +1,29 @@
+=====================================
+  HOW TO UPDATE CONFLUENCE TOKEN
+=====================================
+
+WHEN: Token expires (you'll see "401" or "Failed to connect" errors)
+
+WHERE: Edit this file:
+  C:\AI\AO Creator\backend\confluence-agent\.env
+
+WHAT TO CHANGE:
+  Line 4: CONFLUENCE_API_TOKEN=paste_new_token_here
+
+HOW TO GET NEW TOKEN:
+  1. Open: https://confluence.wargaming.net/admin/users/viewmyaccesstokens.action
+  2. Click "Create Token"
+  3. Name it "AO Creator"
+  4. Set expiration (1 year)
+  5. Copy the token (IMPORTANT: save immediately!)
+  6. Paste into .env file
+
+AFTER UPDATE:
+  1. Run: stop.bat
+  2. Run: start.bat
+  3. Test: Try to create a card
+
+FULL INSTRUCTIONS:
+  See TOKEN_UPDATE.md for detailed guide
+
+=====================================

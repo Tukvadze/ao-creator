@@ -1,0 +1,15 @@
+{
+  "confluence": {
+    "parent_page_title": "[Customization 3.0] 3D Objects Cards",
+    "template_page_title": "🟩Template of a 3D attachment card"
+  },
+  "card_format": {
+    "prefix": "[3D att]",
+    "pattern": "XX_XX"
+  },
+  "folders": {
+    "exclude_from_selection": [
+      "🟩Template of a 3D attachment card"
+    ]
+  }
+}

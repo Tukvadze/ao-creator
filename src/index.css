@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* ── Dark theme — Apple dark palette (matching AO Tracker) ───────────────── */
+:root {
+  color-scheme: dark;
+
+  /* Backgrounds */
+  --bg:         #0c0c0e;
+  --surface:    rgba(32,32,34,0.94);
+  --surface2:   rgba(46,46,48,0.88);
+  --panel-bg:   rgba(28,28,30,0.92);
+  --overlay-bg: rgba(26,26,28,0.98);
+
+  /* Borders */
+  --border:        rgba(255,255,255,0.09);
+  --border2:       rgba(255,255,255,0.05);
+  --border-strong: rgba(255,255,255,0.14);
+
+  /* Text */
+  --text:           #f5f5f7;
+  --text-secondary: rgba(235,235,245,0.76);
+  --muted:          rgba(235,235,245,0.38);
+  --muted2:         rgba(235,235,245,0.58);
+
+  /* Apple semantic colors */
+  --red:    #ff453a;
+  --orange: #ff9f0a;
+  --yellow: #ffd60a;
+  --green:  #30d158;
+  --blue:   #0a84ff;
+  --purple: #bf5af2;
+  --cyan:   #5ac8fa;
+
+  /* Accent */
+  --accent:       #0a84ff;
+  --accent-hover: #3fa0ff;
+
+  /* Fonts */
+  --sans:  'Inter', -apple-system, 'Helvetica Neue', system-ui, sans-serif;
+  --mono:  'SF Mono', 'Menlo', 'Consolas', 'JetBrains Mono', monospace;
+}
+
+/* ── Base Reset ───────────────────────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Scrollbars (WebKit) ──────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 6px;
+  border: 3px solid var(--bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.22);
+}
+
+/* ── Buttons ──────────────────────────────────────────────────────────────── */
+button {
+  font-family: var(--sans);
+  cursor: pointer;
+  user-select: none;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Inputs ───────────────────────────────────────────────────────────────── */
+input, select, textarea {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--text);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(10,132,255,0.15);
+}
+
+input::placeholder {
+  color: var(--muted);
+}
