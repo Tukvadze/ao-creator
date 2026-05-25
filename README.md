@@ -12,10 +12,9 @@ Web application for creating Confluence 3D Attachment cards.
 
 ## Quick Start
 
-**Just double-click:**
-```
-start.bat
-```
+**Double-click to start:**
+- `start-hidden.vbs` - No CMD window (recommended)
+- `start.bat` - With CMD window (for debugging)
 
 This will:
 1. Auto-install dependencies (first time only)

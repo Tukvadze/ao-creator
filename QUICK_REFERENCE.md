@@ -3,7 +3,10 @@
 ## 🚀 Start / Stop
 
 ```bash
-# Start everything
+# Start (hidden, no CMD window)
+start-hidden.vbs
+
+# Start (with CMD window for debugging)
 start.bat
 
 # Stop everything
